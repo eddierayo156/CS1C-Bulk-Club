@@ -801,8 +801,6 @@ void MainWindow::on_pushButton_9_clicked()
     ui->totalrevenue->setMaximum(9999999.99);
     ui->totalrevenue->setValue(revenue);
 
-    ui->executive->setValue(exeIndex);
-
     // goes to transactions database and outputs the item name and qty that is being searched
     query.prepare("SELECT itemName,price,quantity,id FROM transactions WHERE transactionDate = ?");
     query.addBindValue(searchDate);
@@ -897,7 +895,6 @@ void MainWindow::on_pushButton_12_clicked()
         exeIndex++;
     }
     query.exec();
-    exeIndex = ui->executive->value();
 }
 
 // sort by Regular in transaction date

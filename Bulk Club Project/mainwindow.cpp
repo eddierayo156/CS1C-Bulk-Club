@@ -116,7 +116,7 @@ void MainWindow::on_pushButton_inventory_clicked()
 // determine membership status (reg/executive)
 void MainWindow::on_pushButton_memberships_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(5);
+    ui->stackedWidget->setCurrentIndex(13);
 }
 
 // STORE MANAGER FUNCTIONS
@@ -369,7 +369,7 @@ void MainWindow::on_SearchMembDowngrade_clicked()
     ui->stackedWidget->setCurrentIndex(19);
         QSqlQuery query;
         QSqlQueryModel * model = new QSqlQueryModel;
-        query.prepare("SELECT name,id,rebate FROM members WHERE memberType = 'Executive' AND rebate < 55");
+        query.prepare("SELECT name,id,rebate FROM members WHERE memberType = 'Executive' AND rebate < 120");
         query.exec();
 
         model->setQuery(query);
@@ -388,7 +388,7 @@ void MainWindow::on_SearchMembUpgrade_clicked()
 
     QSqlQuery query;
     QSqlQueryModel * model = new QSqlQueryModel;
-    query.prepare("SELECT name,id,totalSpent FROM members WHERE memberType = 'Regular' AND totalSpent > 1375 ");
+    query.prepare("SELECT name,id,totalSpent FROM members WHERE memberType = 'Regular' AND rebate > 55 ");
     query.exec();
 
     model->setQuery(query);

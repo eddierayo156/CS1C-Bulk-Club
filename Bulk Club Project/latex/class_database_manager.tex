@@ -1,0 +1,112 @@
+\hypertarget{class_database_manager}{}\section{Database\+Manager Class Reference}
+\label{class_database_manager}\index{Database\+Manager@{Database\+Manager}}
+
+
+{\ttfamily \#include $<$databasemanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_database_manager_af1c0598acf843b8e970053f17fc845f1}{is\+Open} () const
+\item 
+\hyperlink{class_database_manager_aefa3d6eae7782904f5d758462b573b1e}{Database\+Manager} (const \hyperlink{class_database_manager}{Database\+Manager} \&)=delete
+\item 
+void \hyperlink{class_database_manager_acf8defd44bb315a62c6ef9ed10ea52c0}{operator=} (const \hyperlink{class_database_manager}{Database\+Manager} \&)=delete
+\item 
+bool \hyperlink{class_database_manager_a1b647f6b2904740102c6b00ab72c5843}{Add\+Item} (const \hyperlink{class_item}{Item} \&new\+Item)
+\item 
+bool \hyperlink{class_database_manager_a13822fb9377f14b4aa1bfaf602b1498c}{Remove\+Item} (const \hyperlink{class_item}{Item} \&item)
+\item 
+bool \hyperlink{class_database_manager_ac801dc5402aed14ff310ba12a97f26fe}{Item\+Exists} (const \hyperlink{class_item}{Item} \&item) const
+\item 
+bool \hyperlink{class_database_manager_a6dfabfa6124ec355e8c74b2c14c79f90}{Member\+Exists} (int \&id)
+\item 
+bool \hyperlink{class_database_manager_add7d1cba7d8a7ad3e75f241d1195e7a3}{Add\+Member} (Q\+String name, int id, Q\+String mem\+Type, Q\+String exp\+Date)
+\item 
+bool \hyperlink{class_database_manager_afe3485d17fc80aef5533f76cea5c8a9e}{delete\+Member} (int)
+\item 
+bool \hyperlink{class_database_manager_a244dc8708ff2f3bd600deb85f3dca45a}{Add\+Transaction} (const \hyperlink{class_transaction}{Transaction} \&new\+Transaction)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database_manager}{Database\+Manager} \& \hyperlink{class_database_manager_a4abb527066e28f3928ef45af856e134c}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_database_manager_aefa3d6eae7782904f5d758462b573b1e}\label{class_database_manager_aefa3d6eae7782904f5d758462b573b1e}} 
+\index{Database\+Manager@{Database\+Manager}!Database\+Manager@{Database\+Manager}}
+\index{Database\+Manager@{Database\+Manager}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Database\+Manager()}{DatabaseManager()}}
+{\footnotesize\ttfamily Database\+Manager\+::\+Database\+Manager (\begin{DoxyParamCaption}\item[{const \hyperlink{class_database_manager}{Database\+Manager} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_manager_a1b647f6b2904740102c6b00ab72c5843}\label{class_database_manager_a1b647f6b2904740102c6b00ab72c5843}} 
+\index{Database\+Manager@{Database\+Manager}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Item()}{AddItem()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::\+Add\+Item (\begin{DoxyParamCaption}\item[{const \hyperlink{class_item}{Item} \&}]{new\+Item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_manager_add7d1cba7d8a7ad3e75f241d1195e7a3}\label{class_database_manager_add7d1cba7d8a7ad3e75f241d1195e7a3}} 
+\index{Database\+Manager@{Database\+Manager}!Add\+Member@{Add\+Member}}
+\index{Add\+Member@{Add\+Member}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Member()}{AddMember()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::\+Add\+Member (\begin{DoxyParamCaption}\item[{Q\+String}]{name,  }\item[{int}]{id,  }\item[{Q\+String}]{mem\+Type,  }\item[{Q\+String}]{exp\+Date }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_manager_a244dc8708ff2f3bd600deb85f3dca45a}\label{class_database_manager_a244dc8708ff2f3bd600deb85f3dca45a}} 
+\index{Database\+Manager@{Database\+Manager}!Add\+Transaction@{Add\+Transaction}}
+\index{Add\+Transaction@{Add\+Transaction}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Transaction()}{AddTransaction()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::\+Add\+Transaction (\begin{DoxyParamCaption}\item[{const \hyperlink{class_transaction}{Transaction} \&}]{new\+Transaction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_manager_afe3485d17fc80aef5533f76cea5c8a9e}\label{class_database_manager_afe3485d17fc80aef5533f76cea5c8a9e}} 
+\index{Database\+Manager@{Database\+Manager}!delete\+Member@{delete\+Member}}
+\index{delete\+Member@{delete\+Member}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Member()}{deleteMember()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::delete\+Member (\begin{DoxyParamCaption}\item[{int}]{member\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_manager_a4abb527066e28f3928ef45af856e134c}\label{class_database_manager_a4abb527066e28f3928ef45af856e134c}} 
+\index{Database\+Manager@{Database\+Manager}!instance@{instance}}
+\index{instance@{instance}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \hyperlink{class_database_manager}{Database\+Manager} \& Database\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_database_manager_af1c0598acf843b8e970053f17fc845f1}\label{class_database_manager_af1c0598acf843b8e970053f17fc845f1}} 
+\index{Database\+Manager@{Database\+Manager}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{is\+Open()}{isOpen()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_database_manager_ac801dc5402aed14ff310ba12a97f26fe}\label{class_database_manager_ac801dc5402aed14ff310ba12a97f26fe}} 
+\index{Database\+Manager@{Database\+Manager}!Item\+Exists@{Item\+Exists}}
+\index{Item\+Exists@{Item\+Exists}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Item\+Exists()}{ItemExists()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::\+Item\+Exists (\begin{DoxyParamCaption}\item[{const \hyperlink{class_item}{Item} \&}]{item }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_database_manager_a6dfabfa6124ec355e8c74b2c14c79f90}\label{class_database_manager_a6dfabfa6124ec355e8c74b2c14c79f90}} 
+\index{Database\+Manager@{Database\+Manager}!Member\+Exists@{Member\+Exists}}
+\index{Member\+Exists@{Member\+Exists}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Member\+Exists()}{MemberExists()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::\+Member\+Exists (\begin{DoxyParamCaption}\item[{int \&}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_database_manager_acf8defd44bb315a62c6ef9ed10ea52c0}\label{class_database_manager_acf8defd44bb315a62c6ef9ed10ea52c0}} 
+\index{Database\+Manager@{Database\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Database\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_database_manager}{Database\+Manager} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_database_manager_a13822fb9377f14b4aa1bfaf602b1498c}\label{class_database_manager_a13822fb9377f14b4aa1bfaf602b1498c}} 
+\index{Database\+Manager@{Database\+Manager}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+Item()}{RemoveItem()}}
+{\footnotesize\ttfamily bool Database\+Manager\+::\+Remove\+Item (\begin{DoxyParamCaption}\item[{const \hyperlink{class_item}{Item} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{databasemanager_8h}{databasemanager.\+h}\item 
+\hyperlink{databasemanager_8cpp}{databasemanager.\+cpp}\end{DoxyCompactItemize}
